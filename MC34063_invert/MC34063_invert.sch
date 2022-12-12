@@ -125,8 +125,6 @@ Connection ~ 4700 2400
 Wire Wire Line
 	4400 3000 4700 3000
 Wire Wire Line
-	4400 3100 5000 3100
-Wire Wire Line
 	3350 3300 3600 3300
 $Comp
 L Device:C C2
@@ -137,17 +135,6 @@ F 1 "100p" H 3465 3405 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 3388 3300 50  0001 C CNN
 F 3 "~" H 3350 3450 50  0001 C CNN
 	1    3350 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D1
-U 1 1 639830CC
-P 5450 3150
-F 0 "D1" H 5450 2933 50  0000 C CNN
-F 1 "1N5817" H 5450 3024 50  0000 C CNN
-F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 5450 3150 50  0001 C CNN
-F 3 "~" H 5450 3150 50  0001 C CNN
-	1    5450 3150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -212,8 +199,6 @@ Wire Wire Line
 	5300 3550 5500 3550
 Wire Wire Line
 	5500 3550 5500 3400
-Wire Wire Line
-	5500 3400 5650 3400
 NoConn ~ 5450 3400
 $Comp
 L power:GND #PWR07
@@ -465,13 +450,7 @@ F 3 "" H 4700 3300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5650 3150 5650 3400
-Wire Wire Line
-	5600 3150 5650 3150
-Wire Wire Line
 	4400 3150 4400 3300
-Wire Wire Line
-	4400 3150 5300 3150
 Connection ~ 4400 3300
 Wire Wire Line
 	3350 3600 4000 3600
@@ -486,4 +465,29 @@ F 3 "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf" H 7000 3500 50  0001 
 	1    7000 3500
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	5500 3400 5650 3400
+Wire Wire Line
+	4400 3100 5000 3100
+$Comp
+L Device:D D1
+U 1 1 639830CC
+P 5400 2900
+F 0 "D1" H 5400 2683 50  0000 C CNN
+F 1 "1N5817" H 5400 2774 50  0000 C CNN
+F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 5400 2900 50  0001 C CNN
+F 3 "~" H 5400 2900 50  0001 C CNN
+	1    5400 2900
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5550 2900 5650 2900
+Wire Wire Line
+	5650 2900 5650 3400
+Wire Wire Line
+	5250 2900 5150 2900
+Wire Wire Line
+	5150 2900 5150 3150
+Wire Wire Line
+	5150 3150 4400 3150
 $EndSCHEMATC

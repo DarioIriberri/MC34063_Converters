@@ -350,7 +350,7 @@ F 1 "470u" H 7468 3655 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 7388 3550 50  0001 C CNN
 F 3 "~" H 7350 3700 50  0001 C CNN
 	1    7350 3700
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR010
